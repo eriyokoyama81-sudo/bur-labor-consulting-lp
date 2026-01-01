@@ -130,6 +130,7 @@ html {
         white-space: nowrap;
     }
     .mobile-hidden {
+        display: flex;
         position: fixed;
         bottom: 0;
         left: 0;
@@ -1031,6 +1032,7 @@ html {
     /* Remove placeholder bg */
 
 }
+
 
 
 
