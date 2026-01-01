@@ -156,11 +156,11 @@ html {
     }
 }
 
-    @media(max-width: 480px){
-        .logo-text{
-            font-size: 0.65rem !important;
-        }
+    @media (max-width: 480px) {
+    .logo-text {
+        font-size: 0.65rem !important;
     }
+}
 
 .nav a {
     text-decoration: none;
@@ -1018,6 +1018,7 @@ html {
     /* Remove placeholder bg */
 
 }
+
 
 
 
