@@ -392,6 +392,7 @@ html {
         height: auto;
         aspect-ratio: 1;
     }
+}
 
 /* Section Common */
 .section {
@@ -1021,4 +1022,5 @@ html {
     /* Remove placeholder bg */
 
 }
+
 
