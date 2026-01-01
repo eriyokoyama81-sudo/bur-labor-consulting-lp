@@ -121,9 +121,10 @@ html {
         overflow-x: auto;
         max-width: 100%;
         -webkit-overflow-scrolling: touch;
-    }
+    
         gap: 12px;
         flex-wrap: nowrap;
+        align-items: center;
     }
     .nav a{
         white-space: nowrap;
@@ -1030,6 +1031,7 @@ html {
     /* Remove placeholder bg */
 
 }
+
 
 
 
