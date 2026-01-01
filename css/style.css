@@ -142,9 +142,6 @@ html {
         gap: 15px;
         z-index: 1000;
         flex-wrap: wrap;
-        gap: 15px;
-        z-index: 1000;
-        flex-wrap: wrap;
     }
 
     .header-phone {
@@ -1039,6 +1036,7 @@ html {
     /* Remove placeholder bg */
 
 }
+
 
 
 
