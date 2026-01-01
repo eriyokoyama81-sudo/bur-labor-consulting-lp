@@ -39,7 +39,7 @@ body {
 
 html {
     scroll-behavior: smooth;
-    scroll-padding-top: 80px;
+    scroll-padding-top: 70px;
 }
 
 .container {
@@ -119,18 +119,6 @@ html {
 @media (max-width: 900px) {
     body{
         padding-bottom: 90px;
-    }
-    .nav{
-        overflow-x: auto;
-        max-width: 100%;
-        -webkit-overflow-scrolling: touch;
-    
-        gap: 12px;
-        flex-wrap: nowrap;
-        align-items: center;
-    }
-    .nav a{
-        white-space: nowrap;
     }
     .mobile-hidden {
         display: flex;
@@ -1039,6 +1027,7 @@ html {
     /* Remove placeholder bg */
 
 }
+
 
 
 
