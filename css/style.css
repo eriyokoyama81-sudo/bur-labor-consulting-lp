@@ -149,25 +149,22 @@ html {
         /* Hide text links on very small screens if needed, or make them smaller */
         font-size: 0.8rem;
     }
-    /* 以下を追加 */
-@media (max-width: 900px) {
-    .logo-text {
-        font-size: 0.9rem; /* スマホ用にフォントサイズを縮小 */
-        line-height: 1.3;
+
+    .logo-text{
+        font-size:0.9rem;
+        line-height:1.3;
     }
-    
-    .header-container {
-        padding: 0 12px; /* 左右の余白を確保 */
+
+    .header-container{
+        padding: 0 12px;
     }
 }
 
-/* さらに小さい画面用 */
-@media (max-width: 480px) {
-    .logo-text {
-        font-size: 0.75rem; /* さらに縮小 */
+    @media(max-width: 480px){
+        .logo-text{
+            font-size: 0.75rem;
+        }
     }
-}
-}
 
 .nav a {
     text-decoration: none;
@@ -395,13 +392,6 @@ html {
         height: auto;
         aspect-ratio: 1;
     }
-    /* さらに小さい画面用 */
-@media (max-width: 480px) {
-    .logo-text {
-        font-size: 0.75rem;
-    }
-}
-}
 
 /* Section Common */
 .section {
@@ -1031,3 +1021,4 @@ html {
     /* Remove placeholder bg */
 
 }
+
