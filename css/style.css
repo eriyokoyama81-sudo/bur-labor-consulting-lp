@@ -167,6 +167,13 @@ html {
     .header-container{
         padding: 0 12px;
     }
+    .nav a:not(.btn){
+        display: none;
+    }
+    .nav{
+        overflow: visible;
+        gap: 0;
+    }
 }
 
     @media (max-width: 480px) {
@@ -1032,6 +1039,7 @@ html {
     /* Remove placeholder bg */
 
 }
+
 
 
 
