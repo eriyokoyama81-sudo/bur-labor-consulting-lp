@@ -165,7 +165,7 @@ html {
 }
 
     @media (max-width: 480px) {
-    .logo-text {
+.logo-text {
         font-size: 0.9rem !important;
         line-height: 1.4;
     }
@@ -1027,6 +1027,7 @@ html {
     /* Remove placeholder bg */
 
 }
+
 
 
 
