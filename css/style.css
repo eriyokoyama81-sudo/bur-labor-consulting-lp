@@ -118,6 +118,10 @@ html {
 
 @media (max-width: 900px) {
     .nav{
+        overflow-x: auto;
+        max-width: 100%;
+        -webkit-overflow-scrolling: touch;
+    }
         gap: 12px;
         flex-wrap: nowrap;
     }
@@ -1026,6 +1030,7 @@ html {
     /* Remove placeholder bg */
 
 }
+
 
 
 
