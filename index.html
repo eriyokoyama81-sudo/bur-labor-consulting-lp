@@ -379,10 +379,48 @@
     <script>
         lucide.createIcons();
     </script>
+    <script>
+  (function(){
+    const btn = document.querySelector('.hamburger');
+    const menu = document.getElementById('mobileMenu');
+
+    if(!btn || !menu) return;
+
+    const closeMenu = () => {
+      menu.hidden = true;
+      btn.setAttribute('aria-expanded', 'false');
+    };
+
+    btn.addEventListener('click', () => {
+      const isOpen = btn.getAttribute('aria-expanded') === 'true';
+      btn.setAttribute('aria-expanded', String(!isOpen));
+      menu.hidden = isOpen;
+    });
+
+    // メニュー内リンクを押したら閉じる
+    menu.addEventListener('click', (e) => {
+      if(e.target.tagName === 'A') closeMenu();
+    });
+
+    // 画面をクリックしたら閉じる（外側クリック）
+    document.addEventListener('click', (e) => {
+      if(menu.hidden) return;
+      if(btn.contains(e.target) || menu.contains(e.target)) return;
+      closeMenu();
+    });
+
+    // 画面がPC幅に戻ったら閉じる
+    window.addEventListener('resize', () => {
+      if(window.innerWidth > 900) closeMenu();
+    });
+  })();
+</script>
+
 </body>
 
 
 </html>
+
 
 
 
