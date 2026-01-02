@@ -214,6 +214,18 @@ html {
         gap: 0;
     }
 }
+@media (max-width: 900px){
+  /* ヘッダー内のCTAボタンを非表示 */
+  .nav .btn{
+    display: none;
+  }
+
+  /* ハンバーガーだけ表示 */
+  .hamburger{
+    display: inline-block;
+  }
+}
+
 
     @media (max-width: 480px) {
 .logo-text {
@@ -1078,6 +1090,7 @@ html {
     /* Remove placeholder bg */
 
 }
+
 
 
 
