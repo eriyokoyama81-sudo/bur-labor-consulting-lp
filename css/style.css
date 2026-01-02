@@ -81,6 +81,57 @@ html {
     gap: var(--spacing-lg);
     align-items: center;
 }
+/* ハンバーガーボタン（デフォルトは非表示＝PCでは出さない） */
+.hamburger{
+  display: none;
+  width: 44px;
+  height: 44px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 10px;
+}
+.hamburger span{
+  display: block;
+  height: 2px;
+  margin: 6px 0;
+  background: var(--color-primary);
+  border-radius: 2px;
+  transition: transform .25s, opacity .25s;
+}
+
+/* スマホメニュー（デフォルト非表示） */
+.mobile-menu{
+  position: fixed;
+  top: 70px;              /* ヘッダー高に合わせる（あなたは70px） */
+  left: 0;
+  width: 100%;
+  background: #fff;
+  box-shadow: var(--shadow-md);
+  padding: 16px;
+  z-index: 999;
+}
+.mobile-menu a{
+  display: block;
+  padding: 12px 8px;
+  text-decoration: none;
+  color: var(--color-text);
+  font-weight: 600;
+}
+.mobile-menu a + a{
+  border-top: 1px solid #e2e8f0;
+}
+
+/* スマホ時：PCのナビは隠して、ハンバーガーを表示 */
+@media (max-width: 900px){
+  .nav a:not(.btn){
+    display: none;
+  }
+  .hamburger{
+    display: inline-block;
+  }
+}
 
 .header-phone {
     display: flex;
@@ -1027,6 +1078,7 @@ html {
     /* Remove placeholder bg */
 
 }
+
 
 
 
